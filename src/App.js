@@ -16,12 +16,10 @@ class App extends React.Component {
 
   render() {
     var Div = styled.div`
-    margin: 20px;
-    padding:10px;
-    background-color: #efefef;
     `;
+   
     return (
-      <div>
+      <Div>
         {/*<TinyMCE
           content="<p>This is a story about a man who wanted to learn to develop code again. He started off with learning ReactJS which is just awesome :)</p>"
           config={{
@@ -32,25 +30,23 @@ class App extends React.Component {
         />*/}
         {/*<MyEditor />*/}
         {/*//<Tab />*/}
-        <div>
-          <CV title="Test" float="left">
+      
+          <div>
+          <CV title="Test1" float="right">
             <p>Child1</p>
             <p>Child2</p>
           </CV>
-        
-        </div>
-        <div>
-            <CV title="Test" float="left">
+            <CV title="Test2" float="left">
             <p>Child12222</p>
             <p>Child2</p>
           </CV>
-         
-          <CV title="Test" float="right">
+          <CV title="Test3" float="right">
             <p>Child1</p>
             <p>Child2</p>
           </CV>
-        </div>
-      </div>
+          </div>
+        
+      </Div>
     )
   }
 }
