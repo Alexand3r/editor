@@ -3,7 +3,7 @@ import {Editor, EditorState, RichUtils} from 'draft-js'
 import './DraftJS.css'
 import StyledButton from './StyledComps/Button'
 import DivRoot from './StyledComps/Div'
-import styled, { ThemeProvider } from 'styled-components'
+import  { ThemeProvider } from 'styled-components'
 // Custom overrides for "code" style.
 //We won't use this for the time being
 // const styleMap = {
