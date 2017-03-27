@@ -1,9 +1,7 @@
 /*eslint-disable */
 import React from 'react'
-import MyEditor from './DraftJS.js'
 import Tab from './Tabs/Tabs'
-import Cont from './Atab/Tabs'
-import Tabb from './Atab/Tab'
+import Tabss from './Atab/Tabs'
 import CVS from './Challenges/Simple/Example'
 import CV from './Challenges/Master/CV'
 import styled from 'styled-components'
@@ -12,12 +10,17 @@ import styled from 'styled-components'
 class App extends React.Component {
   handleEditorChange = (e) => {
     console.log('Content was updated:', e.target.getContent())
-  }
-
+  };
   render() {
     var Div = styled.div`
+     font: 300 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: #eee;
+  margin: 0;
+  padding: 0;
     `;
-   
+     var Divv = styled.div`
+    padding:25px;
+    `;
     return (
       <Div>
         {/*<TinyMCE
@@ -31,7 +34,7 @@ class App extends React.Component {
         {/*<MyEditor />*/}
         {/*//<Tab />*/}
       
-          <div>
+          {/*<div>
           <CV title="Test1" float="right">
             <p>Child1</p>
             <p>Child2</p>
@@ -44,8 +47,10 @@ class App extends React.Component {
             <p>Child1</p>
             <p>Child2</p>
           </CV>
-          </div>
-        
+          </div>*/}
+          <Divv>
+          <Tabss />
+          </Divv>
       </Div>
     )
   }

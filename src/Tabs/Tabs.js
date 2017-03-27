@@ -28,11 +28,9 @@ const Tabs = React.createClass({
   },
   _renderTitles() {
     function labels(child, index) {
-
-
       var lis = styled.li`
         display:inline-block;      
-  `;
+    `;
 
    var as = styled.a`
       padding: 8px 12px;
@@ -40,9 +38,7 @@ const Tabs = React.createClass({
       color: #444;
       text-decoration: none;
       border-bottom: 2px solid #f5f5f5;
-   
-  `;
-  
+    `;
       let activeClass = (this.state.selected === index ? 'active' : '');
       return (
         <lis key={index}>
