@@ -5,6 +5,7 @@ import Tabss from './Atab/Tabs'
 import CVS from './Challenges/Simple/Example'
 import CV from './Challenges/Master/CV'
 import styled from 'styled-components'
+import Wrapper from './ODEUM/Tabs/Wrapper'
 /*eslint-enable */
 
 class App extends React.Component {
@@ -14,12 +15,12 @@ class App extends React.Component {
   render() {
     var Div = styled.div`
      font: 300 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  background: #eee;
-  margin: 0;
-  padding: 0;
+     background: #eee;
+     margin: 0;
+     padding: 0;
     `;
      var Divv = styled.div`
-    padding:25px;
+     padding:25px;
     `;
     return (
       <Div>
@@ -49,8 +50,8 @@ class App extends React.Component {
           </CV>
           </div>*/}
           <Divv>
-          <Tabss />
-          </Divv>
+            <Wrapper/>
+            </Divv>
       </Div>
     )
   }

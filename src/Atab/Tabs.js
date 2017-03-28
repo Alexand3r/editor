@@ -42,6 +42,10 @@ const Tabs = React.createClass({
          border-bottom-color: #337ab7;
          `}
     `;
+        var Uls = styled.ul`
+          margin: 0;
+          padding: 0;    
+    `;
 
         function labels(child, index) {
             let activeClass = (this.state.selected === index ? 'active' : '');
@@ -56,9 +60,9 @@ const Tabs = React.createClass({
             );
         }
         return (
-            <ul className="tabs__labels">
+            <Uls className="tabs__labels">
                 {this.props.children.map(labels.bind(this))}
-            </ul>
+            </Uls>
         );
     },
     _renderContent() {
@@ -105,14 +109,14 @@ const Tabss = React.createClass({
         return (
             <div>
                 <Tabs selected={0}>
-                    <Pane label="Anderi">
-                        <div>This tab has my nickname</div>
+                    <Pane label="It's">
+                        <div>Lorem ipsum</div>
                     </Pane>
-                    <Pane label="Andrei">
-                        <div>This tab has my given name</div>
+                    <Pane label="Working">
+                        <div>Lorem ipsum2</div>
                     </Pane>
-                    <Pane label="Chris">
-                        <div>Chris Bro!</div>
+                    <Pane label="finally">
+                        <div>Lorem ipsum3</div>
                     </Pane>
                 </Tabs>
             </div>
