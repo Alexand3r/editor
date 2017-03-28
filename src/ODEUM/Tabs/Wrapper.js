@@ -16,10 +16,10 @@ const Tabss = React.createClass({
                     <Pane label="Felter" icon='felter'>
                         <div>Lorem ipsum2</div>
                     </Pane>
-                    {/*<Pane label="Arbejdsgang" icon='null'>
+                    <Pane label="Arbejdsgang" icon='arbejdsgang'>
                         <div>Lorem ipsum3</div>
                     </Pane>
-                     <Pane label="Brugere" icon='null'>
+                     <Pane label="Brugere" icon='brugere'>
                         <div>Lorem ipsum3</div>
                     </Pane>
                      <Pane label="Handlinger" icon='handlinger'>
@@ -30,7 +30,7 @@ const Tabss = React.createClass({
                     </Pane>
                       <Pane label="Design" icon='design'>
                         <div>Lorem ipsum3</div>
-                    </Pane>*/}
+                    </Pane>
                 </Tabs>
             </div>
         );
