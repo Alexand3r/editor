@@ -89,14 +89,14 @@ export const Tabs = React.createClass({
         color: #444;
         text-decoration: none;
         border-bottom: 2px solid #f5f5f5;
-        border-radius:3px 3px 0px 0px;
+        border-radius:2px 2px 0px 0px;
         background-color: #616161;
         color:white;
         ${props => props.className === 'active' &&
                 css`
         
         background-color: #3b97d3;
-        border-bottom-color: #337ab7;
+        
          `}
     `;
         var Uls = styled.ul`
