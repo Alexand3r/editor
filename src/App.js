@@ -15,7 +15,7 @@ class App extends React.Component {
   render() {
     var Div = styled.div`
      font: 300 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-     background: #eee;
+     
      margin: 0;
      padding: 0;
     `;

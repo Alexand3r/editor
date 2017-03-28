@@ -7,7 +7,7 @@ class CVS extends Component {
     var Div = styled.div`
     margin: 20px;
     padding:10px;
-    background-color: #efefef;
+    background-color: #fff;
     `;
     return (
       <Div>
