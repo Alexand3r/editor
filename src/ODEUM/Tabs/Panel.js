@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const Pane = React.createClass({
-    displayName: 'Pane',
     propTypes: {
         label: React.PropTypes.string.isRequired,
         icon: React.PropTypes.string.isRequired,

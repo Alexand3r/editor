@@ -1,9 +1,5 @@
 /*eslint-disable */
 import React from 'react'
-import Tab from './Tabs/Tabs'
-import Tabss from './Atab/Tabs'
-import CVS from './Challenges/Simple/Example'
-import CV from './Challenges/Master/CV'
 import styled from 'styled-components'
 import Wrapper from './ODEUM/Tabs/Wrapper'
 /*eslint-enable */

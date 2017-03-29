@@ -1,7 +1,6 @@
 import React from 'react';
 import Tabs from './Tabs'
 import Pane from './Panel'
-import CV from '../../Challenges/Simple/Example'
 
 const Tabss = React.createClass({
 
@@ -11,7 +10,8 @@ const Tabss = React.createClass({
             <div>
                 <Tabs selected={0}>
                     <Pane label="Generelt" icon="generelt">
-                       <CV/>
+                        <div>Lorem ipsum1</div>
+                        <div> Nici eu nu am chef lumi</div>
                     </Pane>
                     <Pane label="Felter" icon='felter'>
                         <div>Lorem ipsum2</div>
@@ -20,16 +20,16 @@ const Tabss = React.createClass({
                         <div>Lorem ipsum3</div>
                     </Pane>
                      <Pane label="Brugere" icon='brugere'>
-                        <div>Lorem ipsum3</div>
+                        <div>Lorem ipsum4</div>
                     </Pane>
                      <Pane label="Handlinger" icon='handlinger'>
-                        <div>Lorem ipsum3</div>
+                        <div>Lorem ipsum5</div>
                     </Pane>
                       <Pane label="Konfiguration" icon='settings'>
-                        <div>Lorem ipsum3</div>
+                        <div>Lorem ipsum6</div>
                     </Pane>
                       <Pane label="Design" icon='design'>
-                        <div>Lorem ipsum3</div>
+                        <div>Lorem ipsum7</div>
                     </Pane>
                 </Tabs>
             </div>

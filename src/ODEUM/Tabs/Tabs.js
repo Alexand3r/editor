@@ -1,10 +1,8 @@
 import React from 'react';
 import styled, { css } from 'styled-components'
-
 import * as Icons from 'react-icons/lib/fa'
 
 export const Tabs = React.createClass({
-    displayName: 'Tabs',
     propTypes: {
         selected: React.PropTypes.number,
         icon: React.PropTypes.string,
@@ -21,7 +19,7 @@ export const Tabs = React.createClass({
               
         return {
             reactIconBase: {
-                color: 'white',
+                color: '#34495d',
                 size: 24,
             }
         }
@@ -90,13 +88,12 @@ export const Tabs = React.createClass({
         text-decoration: none;
         border-bottom: 2px solid #f5f5f5;
         border-radius:2px 2px 0px 0px;
-        background-color: #616161;
-        color:white;
+        background-color: #ecf0f0;
+        color:black;
         ${props => props.className === 'active' &&
                 css`
-        
+                color:white;
         background-color: #3b97d3;
-        
          `}
     `;
         var Uls = styled.ul`
@@ -122,7 +119,7 @@ export const Tabs = React.createClass({
             );
         }
         return (
-            <Uls className="tabs__labels">
+            <Uls>
                 {this.props.children.map(labels.bind(this))}
             </Uls>
         );
@@ -130,7 +127,7 @@ export const Tabs = React.createClass({
     _renderContent() {
 
         return (
-            <div className="tabs__content">
+            <div>
                 {this.props.children[this.state.selected]}
             </div>
         );
@@ -143,7 +140,7 @@ export const Tabs = React.createClass({
           border-radius: 3px;
         `;
         return (
-            <Tabss className="tabs">
+            <Tabss>
                 {this._renderTitles()}
                 {this._renderContent()}
             </Tabss>
