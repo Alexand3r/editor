@@ -11,7 +11,6 @@ const Tabss = React.createClass({
                 <Tabs selected={0}>
                     <Pane label="Generelt" icon="generelt">
                         <div>Lorem ipsum1</div>
-                        <div> Nici eu nu am chef lumi</div>
                     </Pane>
                     <Pane label="Felter" icon='felter'>
                         <div>Lorem ipsum2</div>
