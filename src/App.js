@@ -10,13 +10,9 @@ class App extends React.Component {
   };
   render() {
     var Div = styled.div`
-     font: 300 14px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
-     
-     margin: 0;
-     padding: 0;
     `;
      var Divv = styled.div`
-     padding:25px;
+    
     `;
     return (
       <Div>

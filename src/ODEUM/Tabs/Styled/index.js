@@ -1,0 +1,34 @@
+import styled,{css} from 'styled-components'
+
+export const Lis = styled.li`
+        display:inline-block;
+  
+    `;
+export const As = styled.a`
+        padding: 10px 12px;
+        display: inline-flex;
+        color: #444;
+        text-decoration: none;
+        border-bottom: 2px solid #f5f5f5;
+        border-radius:2px 2px 0px 0px;
+        background-color: #ecf0f0;
+        color:black;
+        ${props => props.className === 'active' &&
+                css`
+                color:white;
+        background-color: #3b97d3;
+         `}
+    `;
+export const Uls = styled.ul`
+          margin: 0;
+          padding: 0;    
+    `;
+export const Ico = styled.div`
+         padding-right: 5px;
+    `;
+export const Tabss = styled.div`
+          margin: 25px;
+          background: #fff;
+          border: 1px solid #e5e5e5;
+          border-radius: 3px;
+        `;
