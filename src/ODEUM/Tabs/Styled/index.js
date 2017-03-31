@@ -2,13 +2,16 @@ import styled,{css} from 'styled-components'
 
 export const PanelS = styled.div`
             padding-left: 15px;
+            font-family: 'Source Sans Pro';
+            font-style:italic;
+            font-weight:300;
 `;
 
 export const Lis = styled.li`
         display:inline-block;
         font-family: 'Source Sans Pro';
         font-style: normal;
-        font-weight: 600;
+        font-weight: 400;
     `;
     
 export const As = styled.a`
