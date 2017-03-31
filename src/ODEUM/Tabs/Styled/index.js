@@ -1,8 +1,11 @@
 import styled,{css} from 'styled-components'
 
+export const PanelS = styled.div`
+            padding-left: 15px;
+`;
+
 export const Lis = styled.li`
         display:inline-block;
-  
     `;
 export const As = styled.a`
         padding: 10px 12px;
@@ -29,6 +32,4 @@ export const Ico = styled.div`
 export const Tabss = styled.div`
           margin: 25px;
           background: #fff;
-          border: 1px solid #e5e5e5;
-          border-radius: 3px;
         `;

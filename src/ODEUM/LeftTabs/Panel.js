@@ -1,4 +1,5 @@
 import React from 'react';
+import * as S from './Styled/index'
 
 export const Pane = React.createClass({
     propTypes: {
@@ -8,9 +9,9 @@ export const Pane = React.createClass({
     },
     render() {
         return (
-            <div>
+            <S.PanelS>
                 {this.props.children}
-            </div>
+            </S.PanelS>
         );
     }
 });

@@ -10,7 +10,6 @@ export const As = styled.a`
         text-decoration: none;
         border-bottom: 2px solid #f5f5f5;
         border-radius:2px 2px 0px 0px;
-       
         color:white;
         text-align: center;
         
@@ -29,8 +28,8 @@ export const Uls = styled.ul`
 export const Ico = styled.div`
          padding-right: 5px;
     `;
-export const Tabss = styled.div`
-         
+export const PanelS = styled.div`
+                 padding-left: 5px;
         `;
 export const Wrap = styled.div`
           background-color: #2280c3;
