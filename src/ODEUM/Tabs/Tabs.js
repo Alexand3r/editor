@@ -25,8 +25,7 @@ export const Tabs = React.createClass({
     getChildContext() {
               
         return {
-            reactIconBase: {
-               
+            reactIconBase: {               
                 size: 15,
             }
         }
@@ -49,12 +48,9 @@ export const Tabs = React.createClass({
         });
         
     },
-   
     _renderTitles() {
-
         function labels(child, index) {
             let activeClass = (this.state.selected === index ? 'active' : '');
-            
             return (
                 <S.Lis key={index}>
                     <S.As href="#"
@@ -73,7 +69,6 @@ export const Tabs = React.createClass({
         );
     },
     _renderContent() {
-
         return (
             <div>
                 {this.props.children[this.state.selected]}
@@ -81,7 +76,6 @@ export const Tabs = React.createClass({
         );
     },
     render() {
-     
         return (
             <S.Tabss>
                 {this._renderTitles()}
