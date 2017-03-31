@@ -19,7 +19,7 @@ export const Tabs = React.createClass({
         return {
             reactIconBase: {
                 color: '#34495d',
-                size: 24,
+                size: 17,
             }
         }
     },

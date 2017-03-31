@@ -3,14 +3,16 @@ import styled,{css} from 'styled-components'
 export const PanelS = styled.div`
             padding-left: 15px;
             font-family: 'Source Sans Pro';
-            font-style:italic;
-            font-weight:300;
+            font-style:normal;
+            font-weight:400;
+            font-size:14px;
 `;
 
 export const Lis = styled.li`
         display:inline-block;
         font-family: 'Source Sans Pro';
         font-style: normal;
+        font-size: 15px;
         font-weight: 400;
     `;
     
