@@ -2,7 +2,7 @@ import React from 'react';
 import Tabs from './Tabs'
 import Pane from './Panel'
 
-const Tabss = React.createClass({
+const div = React.createClass({
 
     render() {
         
@@ -35,4 +35,4 @@ const Tabss = React.createClass({
         );
     }
 });
-export default Tabss
+export default div

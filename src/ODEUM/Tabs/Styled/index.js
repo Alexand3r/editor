@@ -6,7 +6,11 @@ export const PanelS = styled.div`
 
 export const Lis = styled.li`
         display:inline-block;
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
     `;
+    
 export const As = styled.a`
         padding: 10px 12px;
         display: inline-flex;
@@ -28,8 +32,12 @@ export const Uls = styled.ul`
     `;
 export const Ico = styled.div`
          padding-right: 5px;
+         ${props => props.className === 'active' &&
+                css`
+                color:white;
+            `}
     `;
 export const Tabss = styled.div`
           margin: 25px;
-          background: #fff;
+          background: #fff;  
         `;
