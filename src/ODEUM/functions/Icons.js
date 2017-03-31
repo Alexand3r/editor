@@ -1,35 +1,40 @@
 import * as Icons from 'react-icons/lib/fa'
 import React from 'react'
-
-export function renderIcons(icon) {
+function color(active){
+    if(active.includes('active'))
+    {return('white');}
+    else
+    {return('#34495d')}
+}
+export function renderIcons(icon,active) {
         switch (icon) {
             case 'settings':
                 return (
-                   <Icons.FaCog/>
+                   <Icons.FaCog color={color(active)}/>
                 );
             case 'design':
                 return (
-                   <Icons.FaCamera/>
+                   <Icons.FaCamera color={color(active)}/>
                 );
             case 'handlinger':
                 return (
-                   <Icons.FaArrowCircleORight/>
+                   <Icons.FaArrowCircleORight color={color(active)}/>
                 );
             case 'felter':
                 return (
-                       <Icons.FaList />
+                       <Icons.FaList color={color(active)}/>
                 );
             case 'generelt':
                 return (
-                    <Icons.FaFileText />
+                    <Icons.FaFileText color={color(active)}/>
                 );
             case 'brugere':
             return(
-                <Icons.FaBook/>
+                <Icons.FaBook color={color(active)}/>
             );
             case 'arbejdsgang':
             return(
-                <Icons.FaAreaChart/>
+                <Icons.FaAreaChart color={color(active)}/>
             );
             default:
                 return (null);

@@ -14,12 +14,20 @@ export const Tabs = React.createClass({
     childContextTypes: {
         reactIconBase: React.PropTypes.object
     },
+    icoColor(className) {
+        if(className.includes('active'))
+        {return('white')}
+        else
+        {
+            return('#34495d')
+        }
+    },
     getChildContext() {
               
         return {
             reactIconBase: {
-                color: '#34495d',
-                size: 17,
+               
+                size: 15,
             }
         }
     },
@@ -37,19 +45,22 @@ export const Tabs = React.createClass({
         event.preventDefault();
         this.setState({
             selected: index
+           
         });
+        
     },
    
     _renderTitles() {
 
         function labels(child, index) {
             let activeClass = (this.state.selected === index ? 'active' : '');
+            
             return (
                 <S.Lis key={index}>
                     <S.As href="#"
                         className={activeClass}
                         onClick={this.handleClick.bind(this, index)}>
-                        <S.Ico>{renderIcons(child.props.icon)}</S.Ico>
+                        <S.Ico>{renderIcons(child.props.icon,activeClass)}</S.Ico>
                         {child.props.label}
                     </S.As>
                 </S.Lis>
