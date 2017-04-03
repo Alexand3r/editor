@@ -75,6 +75,10 @@ export const Tabs = React.createClass({
             </div>
         );
     },
+    componentWillReceiveProps(){
+        this.forceUpdate();
+        console.log("updated");
+    },
     render() {
         return (
             <S.Tabss>
