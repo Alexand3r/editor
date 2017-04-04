@@ -1,4 +1,4 @@
-import * as Icons from 'react-icons/lib/fa'
+import * as Icons from 'react-icons/lib/md'
 import React from 'react'
 function color(active){
     if(active.includes('active'))
@@ -10,27 +10,27 @@ export function renderIcons(icon,active) {
         switch (icon) {
             case 'settings':
                 return (
-                   <Icons.FaCog color={color(active)}/>
+                   <Icons.MdSettings color={color(active)}/>
                 );
             case 'design':
                 return (
-                   <Icons.FaCamera color={color(active)}/>
+                   <Icons.MdOpacity color={color(active)}/>
                 );
             case 'handlinger':
                 return (
-                   <Icons.FaArrowCircleORight color={color(active)}/>
+                   <Icons.MdCode color={color(active)}/>
                 );
             case 'felter':
                 return (
-                       <Icons.FaList color={color(active)}/>
+                       <Icons.MdTimeline color={color(active)}/>
                 );
             case 'generelt':
                 return (
-                    <Icons.FaFileText color={color(active)}/>
+                    <Icons.MdInfo color={color(active)}/>
                 );
             case 'brugere':
             return(
-                <Icons.FaBook color={color(active)}/>
+                <Icons.MdPeople color={color(active)}/>
             );
             case 'arbejdsgang':
             return(

@@ -1,6 +1,7 @@
 import React from 'react';
 import {renderIcons} from '../functions/Icons.js'
 import * as S from './Styled/index.js'
+
 export const Tabs = React.createClass({
     propTypes: {
         selected: React.PropTypes.number,

@@ -1,7 +1,7 @@
 import React from 'react';
 import * as S from './Styled/index'
 
-export const Pane = React.createClass({
+export const Panel = React.createClass({
     propTypes: {
         label: React.PropTypes.string.isRequired,
         icon: React.PropTypes.string.isRequired,
@@ -16,4 +16,4 @@ export const Pane = React.createClass({
     }
 });
 
-export default Pane;
+export default Panel;
