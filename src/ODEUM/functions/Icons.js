@@ -18,11 +18,11 @@ export function renderIcons(icon,active) {
                 );
             case 'handlinger':
                 return (
-                   <Icons.MdCode color={color(active)}/>
+                   <Icons.MdInput color={color(active)}/>
                 );
             case 'felter':
                 return (
-                       <Icons.MdTimeline color={color(active)}/>
+                       <Icons.MdCode color={color(active)}/>
                 );
             case 'generelt':
                 return (
@@ -34,7 +34,7 @@ export function renderIcons(icon,active) {
             );
             case 'arbejdsgang':
             return(
-                <Icons.MdInfo color={color(active)}/>
+                <Icons.MdTimeline color={color(active)}/>
             );
             default:
                 return (null);
