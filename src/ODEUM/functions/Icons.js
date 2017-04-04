@@ -34,7 +34,7 @@ export function renderIcons(icon,active) {
             );
             case 'arbejdsgang':
             return(
-                <Icons.FaAreaChart color={color(active)}/>
+                <Icons.MdInfo color={color(active)}/>
             );
             default:
                 return (null);

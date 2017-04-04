@@ -1,11 +1,10 @@
 import React from 'react';
-import {renderIcons} from '../functions/Icons.js'
-import * as S from './Styled/index.js'
+import {renderIcons} from '../functions/Icons';
+import * as S from './Styled/index';
 
 export const Tabs = React.createClass({
     propTypes: {
         selected: React.PropTypes.number,
-        icon: React.PropTypes.string,
         children: React.PropTypes.oneOfType([
             React.PropTypes.array,
             React.PropTypes.element

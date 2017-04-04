@@ -9,13 +9,9 @@ class App extends React.Component {
     console.log('Content was updated:', e.target.getContent())
   };
   render() {
-    var Div = styled.div`
-    `;
-     var Divv = styled.div`
-    
-    `;
+  
     return (
-      <Div>
+      <div>
         {/*<TinyMCE
           content="<p>This is a story about a man who wanted to learn to develop code again. He started off with learning ReactJS which is just awesome :)</p>"
           config={{
@@ -41,10 +37,10 @@ class App extends React.Component {
             <p>Child2</p>
           </CV>
           </div>*/}
-          <Divv>
+          <div>
             <Wrapper/>
-            </Divv>
-      </Div>
+            </div>
+      </div>
     )
   }
 }
