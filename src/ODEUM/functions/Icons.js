@@ -18,11 +18,19 @@ export function renderIcons(icon,active) {
                 );
             case 'handlinger':
                 return (
+<<<<<<< HEAD
                    <Icons.MdInput color={color(active)}/>
                 );
             case 'felter':
                 return (
                        <Icons.MdCode color={color(active)}/>
+=======
+                   <Icons.MdCode color={color(active)}/>
+                );
+            case 'felter':
+                return (
+                       <Icons.MdTimeline color={color(active)}/>
+>>>>>>> 235186c81793e2b3534eb76d0ec82f338dd6a406
                 );
             case 'generelt':
                 return (
